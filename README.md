@@ -2,7 +2,7 @@
 > This is Karuna Leyva's school assignments portfolio.
 
 > To view project descriptions, please visit: 
-https://karunarajiedu.github.io/portfolio/
+https://karunarajiedu.github.io/
 
 Relevant Courses:
 - Object-Oriented Programming
