@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Reading List";
+}
+<style>
+    .collapsible {
+        background-color: rebeccapurple;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+    .row {
+        margin-top: 15px;
+    }
+
+    .active, .collapsible:hover {
+        background-color: mediumpurple;
+    }
+
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: lavender;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="col-2"></div>
+<div>
+    <h1>Karuna's Reading List</h1>
+    <a class="btn btn-success" asp-controller="Home" asp-action="AddReadingList"> + Add to Reading List</a>
+</div>
+<div class="row">
+    <button type="button" class="collapsible">Becoming</button>
+    <div class="content">
+        <p>Author: Michelle Obama</p>
+        <p>Description/Notes: Recommended by one of my friends. Autobiography of Michelle Obama.</p>
+    </div>
+    <button type="button" class="collapsible">Relentless</button>
+    <div class="content">
+        <p>Author: Clair M. Poulson</p>
+        <p>Description/Notes: Recommended by my mom. She said the suspense in this book was too good.</p>
+    </div>
+    <button type="button" class="collapsible">In Order to Live: a North Korean Girl’s Journey to Freedom</button>
+    <div class="content">
+        <p>Author: Yeonmi Park</p>
+        <p>Description/Notes: I saw some of the author's interview's on her experience in North Korea and wanted to learn more about her experience.</p>
+    </div>
+    <button type="button" class="collapsible">Making a Scene</button>
+    <div class="content">
+        <p>Author: Constance Wu</p>
+        <p>Description/Notes: I love this actress and wanted to learn more about how she rose to fame.</p>
+    </div>
+    <button type="button" class="collapsible">The Vanishing Half</button>
+    <div class="content">
+        <p>Author: Brit Bennett</p>
+        <p>Description/Notes: I saw this recommended all over TikTok.</p>
+    </div>
+ 
+    <script>
+        var listCol = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < listCol.length; i++) {
+            listCol[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</div>
+<div class="col-2"></div>

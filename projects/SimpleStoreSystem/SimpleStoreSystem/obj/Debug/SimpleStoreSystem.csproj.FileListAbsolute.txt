@@ -1,0 +1,8 @@
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\bin\Debug\SimpleStoreSystem.exe.config
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\bin\Debug\SimpleStoreSystem.exe
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\bin\Debug\SimpleStoreSystem.pdb
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\obj\Debug\SimpleStoreSystem.csproj.AssemblyReference.cache
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\obj\Debug\SimpleStoreSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\obj\Debug\SimpleStoreSystem.csproj.CoreCompileInputs.cache
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\obj\Debug\SimpleStoreSystem.exe
+C:\Users\purpl\OneDrive\Documents\CS_3280\SimpleStoreSystem\SimpleStoreSystem\obj\Debug\SimpleStoreSystem.pdb

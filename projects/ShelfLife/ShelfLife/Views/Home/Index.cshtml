@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 80%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: mediumpurple;
+            border-radius: 10px;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+
+        .review {
+            color: white;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<div class="col-2"></div>
+<div class="row-cols-2">
+    <h1>Karuna's Bookshelf</h1>
+</div>
+<div>
+    <h5>
+        Recent Book Reviews...
+        <a class="btn btn-success" asp-controller="Home" asp-action="AddBookReview"> + Add a Book Review</a>
+    </h5>
+</div>
+<table background="images/wood.jpg" style="border-top: 10px brown;">
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            <div class="container">
+                <img src="images/backlash.png" alt="backlash book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Backlash, By: Traci Hunter Abramson</div>
+                    <p class="review">Review: I liked the action in this book. More action than the other books in series.</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <img src="images/accidentalPrivateEye.png" alt="accidental private eye book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Accidental Private Eye, By: Clair M. Poulson</div>
+                    <p class="review">Review: This book I could not put down and had great suspense.</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <img src="images/crossfire.png" alt="crossfire book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Crossfire, By: Traci Hunter Abramson</div>
+                    <p class="review">Review: This was an okay book. It was a bit of a slow burn but I liked the insight to the side characters.</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <img src="images/divergent.png" alt="divergent book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Divergent, By: Veronica Roth</div>
+                    <p class="review">Review: I liked the unique interpretations of society in this book.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="container">
+                <img src="images/markOfTheThief.png" alt="mark of the thief book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Mark of the Thief, By: Jennifer A. Nielson</div>
+                    <p class="review">Review: I really liked the protagonist of this book and how this author tells a story in these Ancient Roman times.</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <img src="images/falling.png" alt="falling book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Falling, By: Clair M. Poulson</div>
+                    <p class="review">Review: This was a great suspense book and I liked that it was based in Utah.</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <img src="images/imperfectSpiral.png" alt="imperfect spiral book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Imperfect Spiral, By: Debbie Levy</div>
+                    <p class="review">Review: This is a sad, but heartwarming book. The character development of the main character was perfect.</p>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <img src="images/runaway.png" alt="runaway book cover" class="image" />
+                <div class="overlay">
+                    <div class="text">Runaway, By: Clair M. Poulson</div>
+                    <p class="review">Review: I liked the interesting mystery behind this book.</p>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<div class="col-2"></div>

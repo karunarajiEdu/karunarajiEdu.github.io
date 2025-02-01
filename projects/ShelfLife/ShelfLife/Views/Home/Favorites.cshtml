@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "Favorites";
+}
+
+<head>
+    <style>
+        /* .book {
+            position: relative;
+            width: 50%;
+        } */
+
+        .image {
+            width: auto;
+            height: 200px;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .heartColor {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+@* found a way to change background color from color picker https://www.youtube.com/watch?v=_1lKyVRt9b8&ab_channel=AkashPambhar *@
+<div class="col-2">
+    <label for="sltdcolor">Choose a Color for your Heart:</label>
+    <input type="color" id="sltdcolor" title="Select a Color" />
+    <script>
+        document.getElementById("sltdcolor").addEventListener("change", colorchange);
+        function colorchange() {
+            var x = document.getElementById("sltdcolor").value;
+            var numOfElements = document.getElementsByClassName('heartColor').length;
+            var i = 0;
+            while (i < numOfElements) {
+                document.getElementsByClassName('heartColor')[i].style.backgroundColor = x;
+                i++;
+            }
+        }
+    </script>
+</div>
+<div class="text-center">
+    <h1>Karuna's Favorite Books</h1>
+    <div class="row">
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/accidentalPrivateEye.png" alt="accidental private eye book cover" class="image" />
+                    </div>
+                </td>
+                <td></td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/backlash.png" alt="backlash book cover" class="image" />
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/crossfire.png" alt="crossfire book cover" class="image" />
+                    </div>
+                </td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/divergent.png" alt="divergent book cover" class="image" />
+                    </div>
+                </td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/falling.png" alt="falling book cover" class="image" />
+                    </div>
+                </td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/imperfectSpiral.png" alt="imperfect spiral book cover" class="image" />
+                    </div>
+                </td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/markOfTheThief.png" alt="mark of the thief book cover" class="image" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/cycledToIndiaForLove.png" alt="the amazing story book cover" class="image" />
+                    </div>
+                </td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/runaway.png" alt="runaway book cover" class="image" />
+                    </div>
+                </td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/silentSting.png" alt="silent sting book cover" class="image" />
+                    </div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="heartColor">
+                    <div class="book">
+                        <img src="~/images/theKissQuotient.png" alt="accidental private eye book cover" class="image" />
+                    </div>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="col-2"></div>

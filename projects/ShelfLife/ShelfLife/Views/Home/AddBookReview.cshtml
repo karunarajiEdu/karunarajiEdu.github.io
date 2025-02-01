@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Add a Book Review";
+}
+
+<head>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<div class="col-2"></div>
+<div>
+    <h1>Add a Book Review</h1>
+</div>
+<div class="col-8">
+    <form action="/action_page.php">
+        @* book cover image upload *@
+        <div>
+            <label for="img">Upload a Book Cover Image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+        </div>
+        @* book title *@
+        <div>
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" />
+        </div>
+        @* author *@
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" />
+        </div>
+        @* book review *@
+        <div>
+            <label for="review">Review Description:</label>
+        </div>
+         <textarea name="review" id="review" rows="5" cols="33"></textarea>
+
+        <div>
+            <a class="btn btn-warning" asp-controller="Home" asp-action="Index">Cancel</a>
+            <a class="btn btn-success">Submit</a>
+        </div>
+    </form>
+</div>
+<div class="col-2"></div>
