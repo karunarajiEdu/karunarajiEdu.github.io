@@ -1,0 +1,10 @@
+{% extends 'petapp/base.html' %}
+
+{% block body %}
+    <h1>Edit Pet Profile</h1>
+<form method="POST">
+    {%  csrf_token %}
+    {{ form }}
+    <button type="submit">Save</button>
+</form>
+{% endblock %}

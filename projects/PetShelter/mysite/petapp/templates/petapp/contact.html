@@ -1,0 +1,14 @@
+{% extends 'petapp/base.html' %}
+<!doctype html>
+<html lang="en">
+
+{% block body %}
+        <img src="https://smb.ibsrv.net/imageresizer/image/blog_images/1200x1200/9408/92913/0314305001545678512.jpg" alt="bunch of animals" id="contactimg">
+        <h2 id="contact">See an animal you like? Fill out the form below, and we will get back to you as soon as we can!</h2>
+        <form method="POST">
+            {%  csrf_token %}
+            {{ form }}
+            <button type="submit">Submit Request</button>
+        </form>
+{% endblock %}
+</html>

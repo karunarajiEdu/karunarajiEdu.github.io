@@ -1,0 +1,61 @@
+{% extends 'petapp/base.html' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pets</title>
+</head>
+<body>
+{% block body %}
+        <div class="col-md-4 offset-md-3">
+            <form action="" method="GET">
+            <label id="search">Search for a specific animal: </label>
+            <input type="search" name="pet_type">
+            <button type="submit">Search</button>
+            </form>
+        </div>
+
+
+    {% for pet_item in pet_object %}
+        <div class="row">
+         <div class="col-md-4 offset-md-2">
+            <img class="card" height="150" src="{{ pet_item.pet_image }}"/>
+        </div>
+        <div class="col-md-3" style="padding-top: 10px; font-size: x-large; font-family: 'Times New Roman'">
+            <p id="pet_name">{{ pet_item.name }}</p>
+            <div class="col-md-3" id="searchinfo">
+            Type: {{ pet_item.animal_type }}
+            </div>
+            <div class="col-md-3" id="searchinfo">
+            Difficulty: {{ pet_item.difficulty }}
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-top: 75px">
+            <a href="{% url 'detail' pet_item.id %}" class="btn btn-success">Details</a>
+            <a href="{% url 'update_pet' pet_item.id %}" class="btn btn-primary">Edit</a>
+        </div>
+        </div>
+
+        <br>
+    {% endfor %}
+
+    <div id="foot">
+    {% if pet_object.has_previous %}
+        <a href="?page=1">First</a>
+        <a href="?page={{ pet_object.previous_page_number }}">Previous</a>
+    {% endif %}
+
+    Page: {{ pet_object.number }} of {{ pet_object.paginator.num_pages }}
+
+    {% if pet_object.has_next %}
+        <a href="?page={{ pet_object.next_page_number }}">Next</a>
+        <a href="?page={{ pet_object.paginator.num_pages }}">Last</a>
+    {% endif %}
+    </div>
+{% endblock %}
+</body>
+</html>

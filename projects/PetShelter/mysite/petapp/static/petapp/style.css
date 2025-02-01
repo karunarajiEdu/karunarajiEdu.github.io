@@ -1,0 +1,144 @@
+body {
+}
+
+.row {
+    background-color: lightblue;
+    border-style: dashed;
+    border-radius: 60px;
+    border-color: palegreen;
+    justify-content: center;
+    display: block;
+}
+
+#nav {
+    color: palegreen;
+    padding-right: 15px;
+}
+
+#home {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 54%;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: palegreen;
+    box-shadow: 0 40px 50px rgba(0,0,0,.2);
+}
+
+#welcome {
+    font-family: fantasy;
+    text-align: center;
+}
+
+td {
+    text-shadow: 2px 2px lightskyblue;
+}
+
+#homecontainer, html {
+    background: url("https://image.slidesdocs.com/responsive-images/background/writing-brush-green-digital-business-yellow-simple-powerpoint-background_6d370eb4ff__960_540.jpg") no-repeat center center fixed;
+    height: 100%;
+  background-size: cover;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#gif {
+    margin-left: 15%;
+    width: 200px;
+}
+
+#pet_name {
+font-family: fantasy;
+    text-shadow: 2px 2px palegreen;
+}
+
+#searchinfo {
+    font-style: italic;
+    width: 30px;
+}
+
+#search {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-shadow: 2px 2px lightskyblue;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#detailcard {
+    border: 5px solid #dad;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
+}
+
+#detailName {
+    font-family: fantasy;
+    text-shadow: 2px 2px palegreen;
+    font-size: 50px;
+}
+
+#petDetail {
+    font-family: Tahoma;
+}
+
+#interest {
+    font-style: italic;
+}
+
+#foot {
+    font-weight: bold;
+    font-family: "Times New Roman";
+    padding-right: 50px;
+    padding-bottom: 25px;
+    text-align: right;
+}
+
+#delete {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Tahoma;
+    border: 5px solid #dad;
+    border-radius: 3px;
+    padding: 3px;
+    border-style: inset;
+    color: black;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.glow {
+    font-family: Stencil;
+  font-size: 45px;
+    padding-left: 5px;
+  color: palegreen;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px deepskyblue, 0 0 40px deepskyblue, 0 0 50px deepskyblue, 0 0 60px deepskyblue, 0 0 70px deepskyblue;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px palegreen, 0 0 40px palegreen, 0 0 50px palegreen, 0 0 60px palegreen, 0 0 70px palegreen, 0 0 80px palegreen;
+  }
+}
+
+#contact {
+    text-shadow: 2px 2px lightskyblue;
+    background-color: palegreen;
+}
